@@ -2,9 +2,8 @@ pipeline {
     agent any
        stages {
         stage('feature Branch Deploy Code') {
-
             steps {
-               echo "Building Artifact from feature branch"
+              sh' echo "Building Artifact from feature branch"'
                echo "Deploying Code from feature branch"
             }
         }
