@@ -10,6 +10,8 @@ pipeline {
                echo "Deploying Code from feature branch"
             }
         }
+
+    stages {
         stage('Main Branch Deploy Code') {
             when {
                 branch 'main'
