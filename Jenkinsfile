@@ -38,7 +38,7 @@ pipeline {
                 sh 'echo "Deploying Code from De112bvelop branch"'
            }
         }
-        stage('4-Develop Branch Development of Code') {
+        stage('4-Development Branch Development of Code') {
             when {
                 branch '112a'
             }
