@@ -1,7 +1,7 @@
 pipeline {
     agent any
     stages {
-        stage('Main Branch Deploy Code') {
+        stage('1-Main Branch Deploy Code') {
             when {
                 branch 'main'
             }
@@ -11,7 +11,7 @@ pipeline {
                 sh 'echo "Deploying Code from Main branch"'
             }
         }
-        stage('Develop Branch Deploy Code') {
+        stage('2-Develop Branch Deploy Code') {
             when {
                 branch 'develop'
             }
@@ -29,7 +29,7 @@ pipeline {
                 sh 'echo "Deploying Code from feature branch"'
            }
         }
-            stage('Develop Branch Deploy Code') {
+            stage('3-Develop Branch Deploy Code') {
             when {
                 branch '112b'
             }
@@ -38,7 +38,7 @@ pipeline {
                 sh 'echo "Deploying Code from De112bvelop branch"'
            }
         }
-        stage('Develop Branch Development of Code') {
+        stage('4-Develop Branch Development of Code') {
             when {
                 branch '112a'
             }
