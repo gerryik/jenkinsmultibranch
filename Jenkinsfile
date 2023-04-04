@@ -29,9 +29,18 @@ pipeline {
                 sh 'echo "Deploying Code from feature branch"'
            }
         }
-                stage('Develop Branch Deploy Code') {
+            stage('Develop Branch Deploy Code') {
             when {
                 branch '112b'
+            }
+            steps {
+                sh 'echo "Building Artifact from 112b branch"'
+                sh 'echo "Deploying Code from De112bvelop branch"'
+           }
+        }
+        stage('Develop Branch Development of Code') {
+            when {
+                branch '112a'
             }
             steps {
                 sh 'echo "Building Artifact from 112b branch"'
